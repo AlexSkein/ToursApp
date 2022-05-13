@@ -23,6 +23,13 @@ namespace ToursApp
         public AddEditPage()
         {
             InitializeComponent();
+            ComboCountries.ItemsSource = ToursBaseEntities.GetContext().Country.ToList();
+
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
