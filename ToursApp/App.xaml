@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:ToursApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#fac716"></Setter>
+        </Style>
          
     </Application.Resources>
 </Application>
