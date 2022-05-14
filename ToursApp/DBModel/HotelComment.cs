@@ -7,23 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ToursApp
+namespace ToursApp.DBModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Country
+    public partial class HotelComment
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Country()
-        {
-            this.Hotel = new HashSet<Hotel>();
-        }
+        public int id { get; set; }
+        public int Hotelid { get; set; }
+        public string Text { get; set; }
+        public string Autor { get; set; }
+        public System.DateTime DateComment { get; set; }
     
-        public string Code { get; set; }
-        public string Name { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Hotel> Hotel { get; set; }
+        public virtual Hotel Hotel { get; set; }
     }
 }

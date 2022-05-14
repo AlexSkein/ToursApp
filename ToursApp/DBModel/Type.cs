@@ -7,17 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ToursApp
+namespace ToursApp.DBModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Hotelimage
+    public partial class Type
     {
-        public int id { get; set; }
-        public int HotelId { get; set; }
-        public byte[] ImageSource { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Type()
+        {
+            this.Tour = new HashSet<Tour>();
+        }
     
-        public virtual Hotel Hotel { get; set; }
+        public int id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Tour> Tour { get; set; }
     }
 }

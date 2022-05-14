@@ -7,18 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ToursApp
+namespace ToursApp.DBModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class HotelComment
+    public partial class Hotelimage
     {
         public int id { get; set; }
-        public int Hotelid { get; set; }
-        public string Text { get; set; }
-        public string Autor { get; set; }
-        public System.DateTime DateComment { get; set; }
+        public int HotelId { get; set; }
+        public byte[] ImageSource { get; set; }
     
         public virtual Hotel Hotel { get; set; }
     }

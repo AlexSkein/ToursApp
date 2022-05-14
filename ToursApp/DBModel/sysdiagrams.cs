@@ -7,24 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ToursApp
+namespace ToursApp.DBModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Type
+    public partial class sysdiagrams
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Type()
-        {
-            this.Tour = new HashSet<Tour>();
-        }
-    
-        public int id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Tour> Tour { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

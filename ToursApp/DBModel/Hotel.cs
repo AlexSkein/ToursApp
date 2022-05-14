@@ -7,31 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ToursApp
+namespace ToursApp.DBModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Tour
+    public partial class Hotel
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Tour()
+        public Hotel()
         {
-            this.Hotel = new HashSet<Hotel>();
-            this.Type = new HashSet<Type>();
+            this.HotelComment = new HashSet<HotelComment>();
+            this.Hotelimage = new HashSet<Hotelimage>();
+            this.Tour = new HashSet<Tour>();
         }
     
         public int id { get; set; }
-        public int TicketCount { get; set; }
         public string Name { get; set; }
-        public string Description { get; set; }
-        public byte[] ImagePreview { get; set; }
-        public decimal Price { get; set; }
-        public bool IsActual { get; set; }
+        public int CountOfStars { get; set; }
+        public string CountryCode { get; set; }
     
+        public virtual Country Country { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Hotel> Hotel { get; set; }
+        public virtual ICollection<HotelComment> HotelComment { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Type> Type { get; set; }
+        public virtual ICollection<Hotelimage> Hotelimage { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Tour> Tour { get; set; }
     }
 }
