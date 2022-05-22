@@ -16,7 +16,7 @@
         <Grid Grid.Row="2" Background="#445c93"></Grid>
         <Frame ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame"></Frame>
 
-        <Image HorizontalAlignment="Left" Height="80" Width="80" Source="Easytravel2.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="80" Width="80" Source="Resources/logo.png"/>
         <TextBlock FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">ToursAPP</TextBlock>
         <Button VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10" Height="30" Width="100" Content="взад" Name="BtnBack" Click="BtnBack_Click"></Button>
 
