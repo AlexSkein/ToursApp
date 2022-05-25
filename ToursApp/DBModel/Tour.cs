@@ -17,6 +17,7 @@ namespace ToursApp.DBModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Tour()
         {
+            this.Description = "ОТСУТСТВУЕТ";
             this.Hotel = new HashSet<Hotel>();
             this.Type = new HashSet<Type>();
         }
@@ -27,7 +28,7 @@ namespace ToursApp.DBModel
         public string Description { get; set; }
         public byte[] ImagePreview { get; set; }
         public decimal Price { get; set; }
-        public bool IsActual { get; set; }
+        public Nullable<bool> IsActual { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }
