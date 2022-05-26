@@ -12,6 +12,7 @@ namespace ToursApp.DBModel
     using System;
     using System.Collections.Generic;
     
+    
     public partial class Tour
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,11 +29,19 @@ namespace ToursApp.DBModel
         public string Description { get; set; }
         public byte[] ImagePreview { get; set; }
         public decimal Price { get; set; }
-        public Nullable<bool> IsActual { get; set; }
+        public bool IsActual { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Type> Type { get; set; }
+
+        public String ActualText
+        {
+            get
+            {
+                return (IsActual) ? "Актуален" : "Не актуален";
+            }
+        }
     }
 }

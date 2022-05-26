@@ -10,8 +10,8 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="401*"/>
-            <RowDefinition Height="49*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <DataGrid x:Name="DGridHotels" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>

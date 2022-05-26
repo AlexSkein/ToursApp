@@ -3,6 +3,8 @@ using System.Windows;
 using System.IO;
 using ToursApp.DBModel;
 using System.Linq;
+using ToursApp.Pages;
+using ToursApp.controls;
 
 
 
@@ -17,8 +19,8 @@ namespace ToursApp
         {
             InitializeComponent();
             Manager.MainFrame = MainFrame;
-            MainFrame.Navigate(new HotelPage());
-            ImportTours();
+            MainFrame.Navigate(new MainPage());
+            //ImportTours();
         }
 
         private void ImportTours()
