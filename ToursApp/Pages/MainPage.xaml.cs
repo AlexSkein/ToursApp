@@ -36,5 +36,18 @@ namespace ToursApp.Pages
         {
             Manager.MainFrame.Navigate(new HotelPage());
         }
+
+ 
+        private void HexaButton1_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new HotelPage());
+        }
+
+      
+
+        private void HexaButton_Click2(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new ToursPage());
+        }
     }
 }

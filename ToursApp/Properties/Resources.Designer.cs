@@ -63,6 +63,16 @@ namespace ToursApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2922 {
+            get {
+                object obj = ResourceManager.GetObject("_2922", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -76,6 +86,16 @@ namespace ToursApp.Properties {
         internal static System.Drawing.Bitmap null_background {
             get {
                 object obj = ResourceManager.GetObject("null_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tours {
+            get {
+                object obj = ResourceManager.GetObject("tours", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

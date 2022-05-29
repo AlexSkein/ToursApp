@@ -7,6 +7,7 @@
              mc:Ignorable="d" 
             >
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="200"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
@@ -14,7 +15,7 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Viewbox Margin="5" Name="ViewImage">
-            <Button Width="300" Height="270" Name="BtnAction" Click="BtnAction_Click">
+            <Button Width="300" Height="270" Name="BtnAction" >
                 <Button.Template>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Path Stroke="CadetBlue" StrokeThickness="4" HorizontalAlignment="Stretch" 
@@ -23,14 +24,14 @@
                             <Path.Style>
                                 <Style TargetType="Path">
                                     <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
+                                        <Trigger Property="IsMouseOver" Value="False">
                                             <Setter Property="Fill">
                                                 <Setter.Value>
-                                                    <ImageBrush ImageSource="{Binding BlackWhiteSource}"></ImageBrush>
+                                                    <ImageBrush ImageSource="{Binding BlacWhiteSource}"></ImageBrush>
                                                 </Setter.Value>
                                             </Setter>
                                         </Trigger>
-                                        <Trigger Property="IsMouseOver" Value="False">
+                                        <Trigger Property="IsMouseOver" Value="True">
                                             <Setter Property="Fill">
                                                 <Setter.Value>
                                                     <ImageBrush ImageSource="{Binding ColoredSource}"></ImageBrush>

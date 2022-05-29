@@ -34,9 +34,7 @@ namespace ToursApp.controls
             DataContext = this;
         }
 
-        private void BtnAction_Click(object sender, RoutedEventArgs e)
-        {
+      
 
-        }
     }
 }
